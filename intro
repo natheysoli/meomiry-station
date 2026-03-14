@@ -1,0 +1,145 @@
+{
+  "project_name": "Meomiry Station",
+  "design_philosophy": {
+    "core_identity": "Digital Scrapbook & Y2K Nostalgia",
+    "vibe": "Unapologetically cute, tactile, and slightly chaotic. Think 'Purikura' machines meets Windows 95 in a candy shop.",
+    "principles": [
+      "Tactile over Flat: Buttons should look clickable (borders, shadows).",
+      "More is More: Use patterns, stickers, and decorative elements generously.",
+      "Soft but Sharp: Pastel colors paired with hard 2px black borders for definition.",
+      "Imperfection: Rotate elements slightly (-2deg, 3deg) to feel handmade."
+    ]
+  },
+  "typography": {
+    "font_strategy": "The 'Retro-Cute' Pairing",
+    "primary_font": {
+      "name": "Cherry Bomb One",
+      "url": "https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap",
+      "usage": "Headings, Logo, Buttons, Sticker Text",
+      "fallback": "cursive"
+    },
+    "secondary_font": {
+      "name": "VT323",
+      "url": "https://fonts.googleapis.com/css2?family=VT323&display=swap",
+      "usage": "UI Elements, Captions, Terminal-style text",
+      "fallback": "monospace"
+    },
+    "body_font": {
+      "name": "Quicksand",
+      "url": "https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap",
+      "usage": "Long text, Instructions, Tooltips",
+      "fallback": "sans-serif"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "main": "#FF9ebb",
+        "light": "#FFC8DD",
+        "dark": "#FF7096"
+      },
+      "secondary": {
+        "main": "#A2D2FF",
+        "light": "#BDE0FE",
+        "dark": "#8ECAE6"
+      },
+      "accent": {
+        "yellow": "#FFF689",
+        "green": "#C1E1C1",
+        "purple": "#CDB4DB",
+        "text": "#2B2B2B"
+      },
+      "neutral": {
+        "white": "#FFFFFF",
+        "off_white": "#FAFAFA",
+        "black": "#000000",
+        "gray": "#F0F0F0"
+      }
+    },
+    "backgrounds": {
+      "main": "bg-[#FFF0F5]",
+      "card": "bg-white",
+      "overlay": "bg-black/20 backdrop-blur-sm"
+    },
+    "gradients": {
+      "holographic": "bg-gradient-to-r from-[#FF9ebb] via-[#A2D2FF] to-[#FFF689]",
+      "retro": "bg-gradient-to-b from-[#FFC8DD] to-[#FFFFFF]"
+    }
+  },
+  "visual_enhancers": {
+    "borders": {
+      "default": "border-2 border-black",
+      "thick": "border-4 border-black",
+      "retro": "border-t-4 border-l-4 border-white border-r-4 border-b-4 border-black"
+    },
+    "shadows": {
+      "hard": "shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]",
+      "soft": "shadow-[0px_4px_16px_rgba(255,158,187,0.4)]",
+      "button": "shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px]"
+    },
+    "textures": {
+      "grid": "bg-[url('https://patterns.ibthemespro.com/images/pattern-grid.png')] bg-[length:20px_20px]",
+      "dots": "bg-[radial-gradient(#00000010_1px,transparent_1px)] [background-size:16px_16px]"
+    },
+    "decorations": {
+      "sparkles": "Use Lucide 'Sparkles' icon with absolute positioning, random rotation, and text-yellow-400",
+      "tape": "Add a small rectangular div with bg-white/50 rotate-45 absolute -top-2 left-1/2 w-8 h-4 shadow-sm"
+    }
+  },
+  "component_guidelines": {
+    "buttons": {
+      "primary": "bg-[#FF9ebb] text-black font-['Cherry_Bomb_One'] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-[#FF7096] transition-all active:translate-y-1 active:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rounded-xl px-6 py-3 text-lg uppercase tracking-wider",
+      "secondary": "bg-white text-black font-['VT323'] border-2 border-black shadow-[3px_3px_0px_0px_rgba(162,210,255,1)] hover:shadow-[3px_3px_0px_0px_rgba(162,210,255,1)] hover:-translate-y-0.5 rounded-lg px-4 py-2 text-xl",
+      "icon": "p-3 bg-white border-2 border-black rounded-full shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-gray-50 active:translate-y-1 active:shadow-none"
+    },
+    "cards": {
+      "base": "bg-white border-2 border-black rounded-2xl shadow-[6px_6px_0px_0px_rgba(205,180,219,1)] p-6",
+      "window": "bg-[#F0F0F0] border-2 border-black shadow-none rounded-none p-1 relative pt-8"
+    },
+    "inputs": {
+      "default": "border-2 border-black rounded-lg px-4 py-2 font-['VT323'] text-xl focus:ring-2 focus:ring-[#FF9ebb] focus:outline-none bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,0.1)]"
+    }
+  },
+  "layout_strategies": {
+    "desktop": "Centered 'App Container' with a max-width of 1000px. Background should be a repeating cute pattern or pastel grid. The main content area acts like a 'desk' or 'sticker sheet'.",
+    "mobile": "Full width, stack elements vertically. Keep buttons large (min 44px height) for touch. Sticky bottom bar for main actions (Capture/Upload).",
+    "spacing": "Use comfortable spacing (p-4, p-6). Avoid cramping. Use 'gap-4' or 'gap-6' for grids.",
+    "alignment": "Center key interactions (Camera, Output). Align explanatory text to the left but keep headers centered and fun."
+  },
+  "photobooth_specifics": {
+    "camera_frame": {
+      "style": "A 'Window' looking frame. Title bar at the top says 'Meomiry Cam.exe' or similar.",
+      "filters": "Filter buttons should be circular with tooltips. Active filter shows a thick colored ring border.",
+      "stickers": "Draggable sticker drawer. Stickers should hover with a slight 'pop' animation."
+    },
+    "gallery": {
+      "grid": "Masonry or polarized-style grid. Each photo looks like a physical instant photo (white border, thicker at bottom).",
+      "empty_state": "Cute illustration of a sleeping cat or empty film roll."
+    }
+  },
+  "assets": {
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 2px or 2.5px. Rounded ends. Colors: Black or Dark Gray."
+    },
+    "images": {
+      "background_pattern": "https://images.unsplash.com/photo-1772048196681-9f5fb53439f6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHw0fHxjdXRlJTIwcGl4ZWwlMjBhcnQlMjBoZWFydCUyMHN0YXIlMjBib3clMjBzdGlja2VyJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MzQ5NjIyNXww&ixlib=rb-4.1.0&q=85",
+      "texture_overlay": "https://images.unsplash.com/photo-1767474604602-967c83619c22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxjdXRlJTIwcGl4ZWwlMjBhcnQlMjBoZWFydCUyMHN0YXIlMjBib3clMjBzdGlja2VyJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MzQ5NjIyNXww&ixlib=rb-4.1.0&q=85",
+      "stickers_source": "Use Lucide icons (Heart, Star, Cloud, Sun, Moon, Zap, Music, Smile) styled as stickers (fill-current, filter drop-shadow)."
+    }
+  },
+  "universal_guidelines": {
+    "interactions": "All buttons must have active states (push down effect). Hover states should be playful (slight rotation or lift).",
+    "accessibility": "Ensure text contrast is high (Black text on pastel backgrounds). Use aria-labels for icon-only buttons.",
+    "code_structure": "Use standard React hooks for state. Keep the 'StickerCanvas' logic separate from the main UI layout."
+  },
+  "instructions_to_main_agent": [
+    "1. Install the fonts in index.css using the @import or <link> tags.",
+    "2. Update tailwind.config.js to include the custom colors and fonts defined above.",
+    "3. Create a 'Layout' component that wraps the app with the pastel grid background.",
+    "4. Build a reusable 'RetroButton' and 'WindowCard' component first.",
+    "5. For the Photobooth, use a relative container for the video feed and absolute positioned divs for stickers.",
+    "6. Use html-to-image or a canvas ref to capture the final composition for download.",
+    "7. Implement 'Draggable' logic for stickers (touch and mouse support)."
+  ]
+}

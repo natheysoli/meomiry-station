@@ -1,0 +1,190 @@
+# 🎀 Meomiry Station
+
+**Meomiry Station** is a pastel-themed online photobooth where users can create cute photo strips with filters, stickers, and aesthetic templates. Users can take photos directly from their camera or upload existing photos, apply fun visual styles, and export their own photobooth strips.
+
+Inspired by Korean photobooth culture and Gen-Z aesthetic design.
+
+---
+
+# ✨ Features
+
+📸 Camera capture or photo upload
+🎨 Multiple aesthetic filters
+🧸 Cute cartoon sticker overlays
+🎞 Photobooth strip generator
+💾 Export and download photo strips
+
+### Available Filters
+
+* Y2K
+* Vintage
+* Hello Kitty aesthetic
+* Polaroid (Polah)
+* Cartoon stickers
+
+---
+
+# 🎨 Design Style
+
+The interface follows a **soft pastel aesthetic** with pink-dominant tones.
+
+Color palette example:
+
+| Color         | Hex       |
+| ------------- | --------- |
+| Pastel Pink   | `#FFD6E8` |
+| Soft Pink     | `#FFF0F6` |
+| Pastel Purple | `#E8D9FF` |
+| Light Blue    | `#DFF7FF` |
+
+Fonts recommended:
+
+* Nunito
+* Fredoka
+* Baloo
+
+---
+
+# 📂 Project Structure
+
+```
+meomiry-station
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── assets
+│   ├── stickers
+│   ├── filters
+│   └── templates
+│
+├── components
+│   ├── camera.js
+│   ├── filters.js
+│   ├── stickers.js
+│   └── export.js
+│
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/yourusername/meomiry-station.git
+```
+
+Navigate into the project folder:
+
+```
+cd meomiry-station
+```
+
+Open the project in your preferred editor.
+
+Example editors:
+
+* VS Code
+* WebStorm
+
+---
+
+# ▶️ Run the Project
+
+Since this project uses standard HTML, CSS, and JavaScript, you can run it locally by simply opening the main file:
+
+```
+index.html
+```
+
+For a better development environment, you can run a local server.
+
+Example with VS Code:
+
+1. Install **Live Server extension**
+2. Right click `index.html`
+3. Click **Open with Live Server**
+
+---
+
+# 📷 How It Works
+
+User flow:
+
+```
+Select Filter
+↓
+Take Photo or Upload Photo
+↓
+Add Stickers
+↓
+Generate Photo Strip
+↓
+Download Image
+```
+
+The application uses:
+
+* Browser Camera API
+* HTML Canvas
+* JavaScript image processing
+
+---
+
+# 🚀 Deployment
+
+This project can be published easily using **GitHub Pages**.
+
+### Steps to publish
+
+1. Push the project to **GitHub**
+
+2. Open repository settings
+
+3. Navigate to:
+
+```
+Settings → Pages
+```
+
+4. Under **Source**
+
+Select:
+
+```
+Deploy from branch
+Branch: main
+Folder: /root
+```
+
+5. Save settings
+
+Your site will be available at:
+
+```
+https://meomiry-station
+```
+
+---
+
+# 🧁 Future Improvements
+
+Possible features to add:
+
+* GIF photobooth mode
+* More aesthetic filters
+* Drag & drop sticker editor
+* Frame templates for different events
+* Mobile camera optimization
+
+---
+
+# 💗 Credits
+
+Created with love for fun online photobooth experiences.
+
+Project name: **Meomiry Station**
